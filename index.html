@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CJaneBarryDesignWebsite</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+
+<head>
+    <title>CJaneBarryDesignWebsite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-        <link type="stylesheet" href="style.css" >
-        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
         }
-    
+
         .header {
             overflow: hidden;
             padding: 20px 10px;
@@ -27,7 +28,8 @@
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
 
         }
 
@@ -50,7 +52,9 @@
         }
 
         @media screen and (max-height: 450px) {
-            .overlaya {font-size: 20px}
+            .overlaya {
+                font-size: 20px
+            }
             .overlay.closebtn {
                 font-size: 40px;
                 top: 15px;
@@ -65,13 +69,17 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
+
         .col-sm-12 img {
+            max-width: 100%;
+            height: auto;
             display: block;
             margin-left: auto;
             margin-right: auto;
             box-shadow: 5px 5px 5px lightgray;
         }
+
 
         .emtpyBackground {
             color: white;
@@ -87,8 +95,23 @@
             font-size: 15px;
             border-radius: 8px;
             color: lightgray;
-          }
+        }
 
+        a[href^="tel"] {
+            color: inherit;
+            /* Inherit text color of parent element. */
+            text-decoration: underline;
+            /* Remove underline. */
+            /* Additional css `propery: value;` pairs here */
+        }
+
+        .janesInfo {
+            color: black;
+        }
+
+        /* .photographer {
+            text-decoration-line: underline;
+        } */
 
         .footerInfo {
             background-color: #EAE2CC;
@@ -104,56 +127,52 @@
             font-size: xx-small;
             text-align: center;
             color: gray;
-            
+
         }
-
-        
-        
-
-
     </style>
-    </head>
+</head>
+
 </html>
 
 <body>
 
 
     <!-- header -->
-    <div id="myHeader" >
+    <div id="myHeader">
         <div class="headerLogo">
             <a href="index.html"></a><img src="images/logo.jpg">
         </div>
     </div>
 
-   <!-- Navbar  -->
-   <div class='header'>
-       <div id='header-center'>
-           <a class='active' href='index.html'>Home</a>|
-           <!-- <a href="about.html">About</a>| -->
-           <a href="portfolio.html">Portfolio</a>|
-           <a href="services.html">Services</a>|
-           <a href="contact.html">Contact</a>
+    <!-- Navbar  -->
+    <div class='header'>
+        <div id='header-center'>
+            <a class='active' href='index.html'>Home</a>|
+            <!-- <a href="about.html">About</a>| -->
+            <a href="portfolio.html">Portfolio</a>|
+            <a href="services.html">Services</a>|
+            <a href="contact.html">Contact</a>
 
-       </div>
-   </div>
-   
-
-
-
-
-     <!-- Home page cover photo -->
-     <br>
-    
-        
-    <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <img class="w3-animate-zoom" src="images/mainHomePg.jpg">
-                </div>
-            </div>
+        </div>
     </div>
-    
-    
+
+
+
+
+
+    <!-- Home page cover photo -->
+    <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="w3-animate-zoom" src="images/mainHomePg.jpg">
+            </div>
+        </div>
+    </div>
+
+
     <!-- Body -->
     <br>
     <div id="emptyBodyElement">
@@ -166,35 +185,42 @@
         <a href="contact.html"><button type="button" style='width:100px;height:50px;color:lightslategray'>Contact</button></a>
 
     </div>
-    
 
-       <!-- Footer -->
-    <div id="footerContainer">
-            <div class='footerInfo'>
-                    <p>  615.507.9375 | info@cjanebarrydesign.com | Franklin, TN  </p>
-                <p>
-              
-               <a href="https://www.houzz.com/user/cjanebarrydesign" target="_blank"><img src="https://img.icons8.com/material/24/000000/houzz.png"></a>
-               <a href="https://www.facebook.com/cjanebarrydesign/?ref=settings" target="_blank"><img src="https://img.icons8.com/material/24/000000/facebook-f.png"></a>
-               <a href="https://www.instagram.com/cjanebarrydesign/" target="_blank">  <img src="https://img.icons8.com/ios/24/000000/instagram.png"></a>
-               <a href="https://www.pinterest.com/CJaneBarryDesign/" target="_blank">  <img src="https://img.icons8.com/ios/24/000000/pinterest.png"></a>
-                </p>
+
+    <!-- Footer -->
+    <div class="footerContainer">
+        <div class='footerInfo'>
+            <div class='janesInfo'>
+                <p> 615.507.9375 | cjanebarrydesign@gmail.com | Franklin, TN </p>
+            </div>
+            <p>
+
+
+                <a href="https://www.houzz.com/user/cjanebarrydesign" target="_blank"><img src="https://img.icons8.com/material/24/000000/houzz.png"></a>
+                <a href="https://www.facebook.com/cjanebarrydesign/?ref=settings" target="_blank"><img src="https://img.icons8.com/material/24/000000/facebook-f.png"></a>
+                <a href="https://www.instagram.com/cjanebarrydesign/" target="_blank"> <img src="https://img.icons8.com/ios/24/000000/instagram.png"></a>
+                <a href="https://www.pinterest.com/CJaneBarryDesign/" target="_blank"> <img src="https://img.icons8.com/ios/24/000000/pinterest.png"></a>
+            </p>
             <div id='footerSmall'>
-               <p>&copy Copywrite, All Rights Reserved, C. Jane Barry Design, 2019</p>
-               <a href="https://www.instagram.com/suzythompsonphotography/" target="_blank" style="color:gray"><p>Photography & Logo: Suzy Thompson Photography</p></a>
-               <p>Web Design: Lance Dirk Design</p>
-               <br>
-               <br>
+                <p>&copy Copywrite, All Rights Reserved, C. Jane Barry Design, 2019</p>
+                <div className='photographer'>
+                    <a href="https://www.instagram.com/suzythompsonphotography/" target="_blank" style="color:gray; text-decoration:underline"><p>Photography
+                            & Logo: @SuzyThompsonPhotography</p></a>
+                </div>
+                <p>Web Design: Lance Dirk Design</p>
+                <br>
+                <br>
             </div>
-            </div>
-
-           
-
         </div>
+
+
+
     </div>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    
+
 </body>
