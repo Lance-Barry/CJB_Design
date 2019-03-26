@@ -157,51 +157,19 @@
         h4 {
             text-align: center;
             font-family: 'Montserrat', sans-serif;
+            color: rgb(190, 145, 30);
 
         }
 
+        h5 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* <!-- 
         /*MEDIA QUERY */
-        @media only screen and (max-width: 640px) {
 
-            .header {
-                position: absolute;
-            }
-
-            #header-center {
-                display: inline-block;
-            }
-
-            nav ul,
-            nav:active ul {
-
-                display: none;
-                position: absolute;
-                padding: 20px;
-                background: #fff;
-                border: 5px solid #444;
-                right: 20px;
-                top: 60px;
-                width: 50%;
-                border-radius: 4px 0 4px 4px;
-
-            }
-
-            nav li {
-
-                text-align: center;
-                width: 100%;
-                padding: 10px 0;
-                margin: 0;
-
-            }
-
-            nav:hover ul {
-
-                display: block;
-
-            }
-
-        }
+        -->*/
     </style>
 </head>
 
@@ -246,21 +214,33 @@
             <br>
 
 
-
-            <div class="nameLogo">
-                <img src="images/CJB_Name_Logo.png" style="width:320px;height:60px;display: block;margin-left:auto;margin-right: auto;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="nameLogo">
+                            <img src="images/CJB_Name_Logo.png" style="width:300px;height:50px;display: block;margin-left:auto;margin-right: auto;">
+                        </div>
+                    </div>
+                </div>
             </div>
             <br>
-            <h4>You may reach us, to discuss your project, at:</h4><br>
-            <h3>Email: info@cjanebarrydesign.com</h3>
-            <h3>Phone: 615.507.9375</h3><br>
-            <h4>We look forward to discovering all of your home's potential!</h4>
+            <h5>You may reach us, to discuss your project, at:</h5><br>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>info@cjanebarrydesign.com</h4>
+                            <h4>615.507.9375</h4><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5>We look forward to discovering all of your home's potential!</h5>
 
         </div>
     </div>
 
-    <br>
-    <br>
+
+
 
 
 
@@ -292,7 +272,7 @@
 
 
 
-    <br>
+    
     <div id="emptyBodyElement">
         <div class="emtpyBackground">
 
@@ -324,14 +304,8 @@
                 <br>
             </div>
         </div>
-
-
-
-
-
-
     </div>
-    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
