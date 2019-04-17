@@ -1,3 +1,3 @@
 # CJB_Design
-# www.cjanebarrydesign.com
+# cjanebarrydesign.com
 
