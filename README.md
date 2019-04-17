@@ -1,3 +1,3 @@
 # CJB_Design
-# cjanebarrydesign.com
+# Search for cjanebarrydesign.com without 'www' while the hosting company corrects subdomain error. 
 
