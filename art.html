@@ -3,6 +3,18 @@
 
 <head>
     <title>C Jane Barry Design</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+
+    <!-- <link type="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link type="stylesheet" href="style.css">
@@ -51,7 +63,7 @@
             transform: translate(-50%, -50%);
         }
 
-        @media screen and (max-height: 450px) {
+        @media screen and (mas-height: 450px) {
             .overlaya {
                 font-size: 20px
             }
@@ -60,6 +72,28 @@
                 top: 15px;
                 right: 35px;
             }
+            /* .artImageLeft {
+                align-content: center;
+                padding-right: 5px;
+            }
+            .artImageRight {
+                align-content: center;
+                padding-left: 5px;
+            } */
+            .col-sm-6 {
+                align-self: auto !important;
+            }
+            .col-sm-6 img {
+                padding: 5px, 5px, 5px 5px !important;
+                align-content: center !important;
+            }
+
+            .col-sm-12 {
+                text-align: justify;
+                text-justify: inter-word;
+
+            }
+
         }
 
         #myHeader img {
@@ -70,53 +104,33 @@
             margin-right: auto;
         }
 
-        .homePgPhoto img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .col-sm-6 {
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 30px;
         }
 
-        h2 {
-            display: block;
-            text-align: center;
-            text-justify: inter-word;
-           
+        .col-sm-6 img {
+            width: 420px;
+            height: 630px;
+
+            box-shadow: 7px 7px 7px lightgrey;
         }
 
-       
-
-        h3 {
-            display: block;
+        .col-sm-12 h3 {
             text-align: justify;
             text-justify: inter-word;
-            padding-top: 30px;
-            padding-left: 300px;
-            padding-right: 300px;
         }
 
-        .col-sm-12 {
-            /* text-shadow: 2px 2px lightgray; */
-            font-size: large;
-            display: block;
-            text-align: justify;
-            text-justify: inter-word;
-            padding-top: 30px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
+        /* .col-sm-12 img {
+            width: 420px;
+            height: 630px;
+            box-shadow: 7px 7px 7px lightgrey;
+        } */
 
         .emtpyBackground {
             color: white;
             height: 60px;
-
-        }
-
-        .col-sm-6 {
-            font-family: 'Montserrat', sans-serif;
-            /* text-shadow: 2px 2px lightgray; */
-            font-size: large;
-            justify-content: center;
-            padding-left: 80px;
 
         }
 
@@ -141,7 +155,6 @@
             color: black;
         }
 
-
         .footerInfo {
             background-color: #EAE2CC;
             width: 100%;
@@ -155,110 +168,85 @@
         #footerSmall {
             font-size: xx-small;
             text-align: center;
-            color: gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .backButton {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-
-    <!-- header -->
+    <!-- HEADER LOGO -->
     <div id="myHeader">
         <div class="headerLogo">
             <a href="index.html"><img src="images/logo.jpg"></a>
         </div>
     </div>
 
-    <!-- Navbar  -->
-    <div class='header'>
-        <div id='header-center'>
-            <a href='index.html'>Home</a>|
-            <!-- <a href="about.html">About</a>| -->
-            <a href="portfolio.html">Portfolio</a>|
-            <a class='active' href="services.html">Services</a>|
-            <a href="art.html">Art</a>|
-            <a href="contact.html">Contact</a>
 
+    <!-- NAVIGATION SECTION -->
+    <nav>
+        <div class='header'>
+            <div id='header-center'>
+                <a href='index.html'>Home</a>|
+                <!-- <a href="about.html">About</a>|  -->
+                <a href="portfolio.html">Portfolio</a>|
+                <a href="services.html">Services</a>|
+                <a class='active' href="art.html">Art</a>|
+                <a href="contact.html">Contact</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <h2>Prophetic Art</h2><br>
+
+    <!-- CARD SECTION -->
+    <!-- Bootstrap Containers-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" align="right">
+                <a href="images/angelWebsite.jpg"><img src="images/angelWebsite.jpg" alt="angel painting" style="float: right;"></a>
+            </div>
+            <div class="col-sm-6" align="left">
+                <a href="images/covenantWebsite.jpg"><img src="images/covenantWebsite.jpg" alt='covenant painting' style="float: left;"></a>
+            </div>
         </div>
     </div>
 
-
-    <h2>Services</h2>
-
-
-    <br>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p>C. Jane Barry Design is a full service interior design studio assisting clients with any level of need.
-                    We consider the uniqueness of each individual project from scope, scale and budget; to taste, design
-                    style and preference. Whether it be new construction, renovation, sale, or restyle, we find joy in creating
-                    beauty and capturing each client&apos;s unique personality in your home or work environment.</p>
-            </div>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <p>SPACE PLANNING</p>
-                <p>INTERIOR AND EXTERIOR ELEVATIONS</p>
-                <p>FLOOR AND AREA RUG SELECTION</p>
-                <p>ACCESSORIES</p>
-                <p>BEDDING AND WINDOW TREATMENTS</p>
-                <p>WALLCOVERING AND WALLPAPER</p>
-                <p>NEW CONSTRUCTION</p>
-                <p>CONSTRUCTION ADMINISTRATION</p>
-                <p>RENDERINGS</p>
-                <p>STAGING AND REPURPOSING</p>
-                <p>PRESENTATION BOARDS</p>
-                <p>AutoCAD DRAWINGS</p>
-                <p>ELECTRICAL PLANS</p>
-                <p>INTERIOR MATERIALS AND FINISHES</p>
-                <p>CUSTOM FIREPLACES</p>
-                <p>LIGHTING SELECTION</p>
-            </div>
-            <div class="col-sm-6">
-                <p>FURNITURE SELECTION</p>
-                <p>FURNITURE PLANS</p>
-                <p>REFLECTIVE CEILING PLANS</p>
-                <p>CUSTOM FLOORING</p>
-                <p>CUSTOM BUILT-INS AND ARRANGING</p>
-                <p>PAINT AND STAIN</p>
-                <p>PLUMBING, FIXTURES AND HARDWARE</p>
-                <p>REMODELING AND RENOVATIONS</p>
-                <p>FIXTURE AND ACCESSORY PACKAGES</p>
-                <p>WORKING DRAWINGS</p>
-                <p>OUTDOOR SPACES</p>
-                <p>ARTWORK</p>
-                <p>INTERIOR DETAIL DRAWINGS</p>
-                <p>CABINET AND COUNTERTOPS</p>
-                <p>EXTERIOR MATERIALS AND FINISHES</p>
-                <p>COMMISSIONED CUSTOM ARTWORK</p>
+                <h3>Accepting commissioned work for prophetic art to bless your home or office. You may reach me through
+                    my contact page, to discuss your project.</h3>
             </div>
         </div>
     </div>
 
 
-    <!-- Body -->
+    <!-- BODY -->
     <br>
     <div id="emptyBodyElement">
         <div class="emtpyBackground">
+
         </div>
     </div>
 
+    <!-- CONCTACT BUTTON -->
     <div class='contactButton'>
         <a href="contact.html"><button type="button" style='width:100px;height:50px;color:lightslategray'>Contact</button></a>
     </div>
 
 
-    <!-- Footer -->
-    <div id="footerContainer">
+    <!-- FOOTER -->
+    <div class="footerContainer">
         <div class='footerInfo'>
             <div class='janesInfo'>
                 <p> 615.507.9375 | info@cjanebarrydesign.com | Franklin, TN </p>
@@ -266,15 +254,12 @@
             <p>
                 <a href="https://www.houzz.com/user/cjanebarrydesign" target="_blank"><img src="https://img.icons8.com/material/24/000000/houzz.png"></a>
                 <a href="https://www.facebook.com/cjanebarrydesign/?ref=settings" target="_blank"><img src="https://img.icons8.com/material/24/000000/facebook-f.png"></a>
-                <a href="https://www.instagram.com/cjanebarrydesign/" target="_blank"><img src="https://img.icons8.com/ios/24/000000/instagram.png"></a>
+                <a href="https://www.instagram.com/cjanebarrydesign/" target="_blank"> <img src="https://img.icons8.com/ios/24/000000/instagram.png"></a>
                 <a href="https://www.pinterest.com/CJaneBarryDesign/" target="_blank"> <img src="https://img.icons8.com/ios/24/000000/pinterest.png"></a>
             </p>
             <div id='footerSmall'>
                 <p>&copy Copywrite, All Rights Reserved, C. Jane Barry Design, 2019</p>
-                <div className='photographer'>
-                    <!-- <a href="https://www.instagram.com/suzythompsonphotography/" target="_blank" style="color:gray; text-decoration:underline"><p>Photography -->
-                            <!-- & Logo: @SuzyThompsonPhotography</p></a> -->
-                </div>
+
                 <p>Web Design: <a href="http://www.lancebarry.dev" target="_blank" style="color:gray; text-decoration: underline">www.lancebarry.dev</p></a>
                 <br>
                 <br>
@@ -283,10 +268,7 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
 </body>
+
 </html>

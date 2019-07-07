@@ -3,11 +3,18 @@
 
 <head>
     <title>C Jane Barry Design</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link type="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 
     <style>
         body {
@@ -129,6 +136,19 @@
         .col-sm-4 {
             text-align: center;
         }
+
+         .col-sm-6 {
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+        }
+
+        .col-sm-6 img {
+            width: 420px;
+            height: 630px;
+            border: 0;
+            box-shadow: 7px 7px 7px lightgrey;
+        }
     </style>
 </head>
 
@@ -149,6 +169,7 @@
             <!-- <a href="about.html">About</a>| -->
             <a class='active' href="portfolio.html">Portfolio</a>|
             <a href="services.html">Services</a>|
+            <a href="art.html">Art</a>|
             <a href="contact.html">Contact</a>
         </div>
     </div>
@@ -157,37 +178,48 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4" align="right">
-                <a href="laddPark.html"><img src="images/mainHomePg.jpg" alt="projectOne Portfolio" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
+            <div class="col-sm-6" align="right">
                 <h4>Ladd Park</h4>
+                <a href="laddPark.html"><img src="images/mainHomePg.jpg" alt="projectOne Portfolio" style="float:right;"></a>
+               
                 <p></p><br><br>
             </div>
-            <div class="col-sm-4" align="center">
-                <a href="streamvalley.html"><img src="images/streamvalley/IMG_0061.jpg" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
+
+            <div class="col-sm-6" align="left">
                 <h4>Stream Valley</h4>
-                <p></p>
-            </div>
-            <div class="col-sm-4" align="left">
-                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectThree Portfolio" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
-                <h4>Brookfield</h4>
+                <a href="streamvalley.html"><img src="images/streamvalley/IMG_0061.jpg" alt="projectTwo Portfolio" style="border:0;float:left;"></a>
+                
+                
             </div>
         </div>
-    </div>
 
-    <div class="container">
         <div class="row">
-            <div class="col-sm-4" align="right">
-                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectFour Portfolio" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
-                <h4>Historical Murfreesboro</h4><br><br>
+            <div class="col-sm-6" align="right">
+                <h4>Brookfield</h4>
+                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectThree Portfolio" style="float:right;"></a>
+                
+            </div>
+
+            <div class="col-sm-6" align="left">
+                <h4>Historical Murfreesboro</h4>
+                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectFour Portfolio" style="float:left;"></a>
+                
 
             </div>
-            <div class="col-sm-4" align="center">
-                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectFive Portfoloio" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
-                <h4>Ashland City</h4>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-sm-6" align="right">
+                    <h4>Ashland City</h4>
+                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectFive Portfoloio" style=float:right;"></a>
+                    
             </div>
-            <div class="col-sm-4" align="left">
-                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectSix Portfolio" style="width:300px;height:450px;border:0;box-shadow: 7px 7px 7px lightgray;"></a>
-                <h4>Your Home Here</h4>
+
+            <div class="col-sm-6" align="left">
+                    <h4>Your Home Here</h4>
+                <a href="portfolio.html"><img src="images/comingSoon.jpg" alt="projectSix Portfolio" style="float:left;"></a>
+                    
             </div>
         </div>
     </div>
@@ -246,4 +278,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -3,12 +3,28 @@
 
 <head>
     <title>C Jane Barry Design</title>
+    <!-- <link type="stylesheet" href="style.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link type="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+
+    <!-- <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+
+
+    <!-- <script src="main.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link type="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
 
 
 
@@ -31,9 +47,11 @@
             overflow: hidden;
             padding: 20px 10px;
 
+
         }
 
         .header a {
+
             float: center;
             color: grey;
             text-align: center;
@@ -101,13 +119,13 @@
             height: auto;
         }
 
-        a[href^="tel"] {
+        /* a[href^="tel"] {
             color: inherit;
             /* Inherit text color of parent element. */
-            text-decoration: underline;
-            /* Remove underline. */
-            /* Additional css `propery: value;` pairs here */
-        }
+        /* text-decoration: underline; */
+        /* Remove underline. */
+        /* Additional css `propery: value;` pairs here */
+        /* } */
 
         .contactButton {
             font-family: 'Cinzel', serif;
@@ -122,8 +140,6 @@
         .janesInfo {
             color: black;
         }
-
-        
 
         .footerInfo {
             background-color: #EAE2CC;
@@ -147,9 +163,10 @@
 
         #emptyBodyElement {
             color: white;
-            height: 400px;
+            height: 500px;
 
         }
+
 
         h3 {
             text-align: center;
@@ -164,15 +181,22 @@
 
         }
 
-        h5 {
+        /* h5 {
             text-align: center;
             font-family: 'Montserrat', sans-serif;
-        }
+        } */
 
-        /* <!-- 
+
         /*MEDIA QUERY */
+        @media screen and (max-width: 450px) {
+            /* .phoneIcon {
+                justify-content:right;
+            }
+            .emailIcon {
+                justify-items: left !important;
 
-        -->*/
+            } */
+        }
     </style>
 </head>
 
@@ -189,13 +213,12 @@
     <!-- Navbar  -->
     <div class='header'>
         <div id='header-center'>
-            <ul>
-                <li><a href='index.html'>Home</a>|</li>
-                <!-- <a href="about.html">About</a>| -->
-                <li><a href="portfolio.html">Portfolio</a>|</li>
-                <li><a href="services.html">Services</a>|</li>
-                <li><a class='active' href="contact.html">Contact</a></li>
-            </ul>
+            <a href='index.html'>Home</a>|
+            <!-- <a href="about.html">About</a>| -->
+            <a href="portfolio.html">Portfolio</a>|
+            <a href="services.html">Services</a>|
+            <a href="art.html">Art</a>|
+            <a class='active' href="contact.html">Contact</a>
         </div>
     </div>
 
@@ -215,8 +238,8 @@
             <!-- <div class="col-sm-12">
                 <img src="images/underConstruction.jpg" style="width:320px;height:120px;display:block;margin-left:  auto;margin-right: auto;"><br>
             </div> -->
-            
-            <!-- `` -->
+
+            <!-- LOGO -->
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -226,9 +249,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
             <br>
-            
-            <div class="container">
+
+            <!-- CONTACT SECTION -->
+            <div class="container-fluid " id="contact">
+                <div class="row text-center ">
+                    <!-- <div class="col-12 text-center">
+                    </div> -->
+                    <div class="contactDesc">
+
+                        <div class="col-sm-6" align="right">
+                            <div class="phoneIcon">
+                                <a class="social" id="phone" title="Phone Number" href="tel: 6155079375"><i class="fas fa-phone-square"
+                                        style=" color: rgb(190, 145, 30)"></i><span>Call</span></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6" align="left">
+                            <div class="emailIcon">
+                                <a class="social" id="email" title="Email" href="mailto: info@cjanebarrydesign.com"><i class="fas fa-envelope-square"
+                                        style=" color:rgb(190, 145, 30)"></i><span>Email</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+    
+
+
+        <!-- <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <h4>info@cjanebarrydesign.com</h4>
@@ -236,13 +289,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <h5>We look forward to discovering all of your home's potential!</h5>
+            </div> -->
+        <br>
+        <br>
+        <h4>We look forward to discovering all of your home's potential!</h4>
 
-        </div>
-    </div>
+
+   
 
 
 
@@ -277,7 +330,7 @@
 
 
 
-    
+
     <div id="emptyBodyElement">
         <div class="emtpyBackground">
 

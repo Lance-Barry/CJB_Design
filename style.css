@@ -1,4 +1,4 @@
-#contactForm {
+/* #contactForm {
     text-align: center;
     font-family: font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -8,6 +8,80 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+
+i.social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 4em;
+}
+.social {
+  padding: 2em 1.5em 0 0;
+}
+
+
+
+/* CONTACT DIV */
+/* .contactTitle {
+  padding: 4em 0 1em 0;
+  font-weight: bolder;
+  font-size: 1.5em;
+  font-family: avenir next;
+  color: rgb(56, 49, 49);
+  text-decoration: underline;
+} */
+.contactDesc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 6em;
+  font-size: 1em;
+  font-weight: 200;
+  color: rgb(56, 49, 49);
+}
+
+.contactDesc a {
+  text-decoration: none;
+  display: block;
+}
+
+.contactHeader {
+  font-weight: 300;
+  padding: 1em 0 0;
+  font-family: avenir next;
+}
+.contactHeader2{
+  font-weight: 300;
+  padding: 1em 0 3em;
+  font-family: avenir next;
+}
+
+i {
+  font-size: 3.1em;
+}
+
+#phone {
+  align-content: center;
+
+}
+
+span:hover {
+  color: rgb(158, 150, 137);
+  font-weight: 600;
+}
+
+span {
+  color: #333;
+  font-size: 0.7em;
+  font-weight: 300;
+  padding: 5px 0 10px 0;
+  display: block;
+  /* text-transform:uppercase; */
+  font-family: avenir next;
+  letter-spacing: 1px;
 }
 
 
